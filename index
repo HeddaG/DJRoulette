@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DJ Roulette</title>
+  <meta name="description" content="DJ Roulette — spin a vibe, get a random prompt, and keep the party moving." />
+  <style>
+    :root { --max: 900px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; color: #111; }
+    header { padding: 56px 16px 24px; background: #f6f7fb; }
+    main { padding: 24px 16px 56px; }
+    .wrap { max-width: var(--max); margin: 0 auto; }
+    .badge { display:inline-block; padding: 6px 10px; border-radius: 999px; background:#111; color:#fff; font-size: 12px; }
+    h1 { margin: 12px 0 8px; font-size: 44px; line-height: 1.05; }
+    p { font-size: 18px; line-height: 1.5; margin: 12px 0; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
+    .btn { display:inline-block; padding: 12px 16px; border-radius: 12px; text-decoration:none; font-weight: 600; }
+    .btn.primary { background:#111; color:#fff; }
+    .btn.secondary { background:#e9ebf3; color:#111; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:14px; margin-top:24px; }
+    .card { border:1px solid #e5e7ef; border-radius: 16px; padding: 16px; }
+    .small { font-size: 14px; color:#444; }
+    footer { border-top:1px solid #eee; padding: 18px 16px; }
+    .links { display:flex; gap:14px; flex-wrap:wrap; }
+    code { background:#f1f3f8; padding: 2px 6px; border-radius: 6px; }
+    img.sshot { width:100%; height:auto; border-radius:14px; border:1px solid #e5e7ef; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="badge">DJ Roulette</span>
+      <h1>Spin the vibe.<br/>Mix the moment.</h1>
+      <p>
+        DJ Roulette gives you random DJ prompts and challenges — perfect for practice sessions,
+        house parties, and getting out of a creative rut.
+      </p>
+      <div class="cta">
+        <!-- Replace these with your real store links when ready -->
+        <a class="btn primary" href="#" aria-label="Download on the App Store">App Store (coming soon)</a>
+        <a class="btn secondary" href="#" aria-label="Get it on Google Play">Google Play (coming soon)</a>
+      </div>
+      <p class="small">Support: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <div class="card">
+          <h2>How it works</h2>
+          <p>Tap <strong>Spin</strong> to get a random prompt: genre switch, BPM jump, transition style, energy boost, and more.</p>
+        </div>
+        <div class="card">
+          <h2>Great for</h2>
+          <p>Practice routines, warm-ups, party games, DJ crews, or breaking the “same set” loop.</p>
+        </div>
+        <div class="card">
+          <h2>Lightweight</h2>
+          <p>No accounts needed (unless you add them). Fast, simple, and focused on fun.</p>
+        </div>
+      </div>
+
+      <!-- Optional screenshots section -->
+      <h2 style="margin-top:32px;">Screenshots</h2>
+      <p class="small">Add your images in a <code>assets/</code> folder and update the filenames below.</p>
+      <div class="grid">
+        <div class="card"><img class="sshot" src="assets/screenshot1.png" alt="DJ Roulette screenshot 1"></div>
+        <div class="card"><img class="sshot" src="assets/screenshot2.png" alt="DJ Roulette screenshot 2"></div>
+        <div class="card"><img class="sshot" src="assets/screenshot3.png" alt="DJ Roulette screenshot 3"></div>
+      </div>
+
+      <h2 style="margin-top:32px;">Support</h2>
+      <p>
+        Need help or want to report a bug? Email
+        <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.
+      </p>
+      <p class="small">
+        Links: <a href="privacy.html">Privacy Policy</a> • <a href="support.html">Support</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap links small">
+      <span>© <span id="y"></span> DJ Roulette</span>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
